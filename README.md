@@ -47,3 +47,19 @@ You might want to use the directive this way if you need to get the user permiss
 ```
 <button request-notification-permission>Call</button>
 ```
+
+## Running Tests
+
+### Install dev dependencies
+
+To install the dev dependencies:
+
+```
+npm install
+```
+
+To run the unit tests:
+
+```
+npm test
+```
