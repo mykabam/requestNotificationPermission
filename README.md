@@ -4,7 +4,7 @@ requestNotificationPermission directive
 [![Build Status](https://travis-ci.org/mykabam/requestNotificationPermission.png?branch=master)](https://travis-ci.org/mykabam/requestNotificationPermission)
 [![Dependency Status](https://gemnasium.com/mykabam/requestNotificationPermission.png)](https://gemnasium.com/mykabam/requestNotificationPermission)
 
-A handy directive to request Notification permission from user.
+A handy directive to [request Notification permission](http://www.w3.org/TR/2012/WD-notifications-20120614/#permission) from user.
 
 ## Browser supports
 
