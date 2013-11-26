@@ -1,0 +1,27 @@
+{
+  "name": "kabam-requestNotificationPermission",
+  "version": "1.0.0",
+  "authors": [
+    "Muhammad Ghazali <muhammadghazali2480@gmail.com>"
+  ],
+  "description": "Angular directive to request Notification permission",
+  "main": "requestNotificationPermission.js",
+  "keywords": [
+    "angular",
+    "directive",
+    "web notification"
+  ],
+  "license": "MIT",
+  "homepage": "TBD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.2",
+    "angular-mocks": "~1.2.2"
+  }
+}
