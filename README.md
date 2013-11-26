@@ -5,3 +5,40 @@ requestNotificationPermission directive
 [![Dependency Status](https://gemnasium.com/mykabam/requestNotificationPermission.png)](https://gemnasium.com/mykabam/requestNotificationPermission)
 
 A handy directive to request Notification permission from user.
+
+## How to Install
+
+To use this directive, fist you need to install it via [Bower](http://bower.io/).
+I assume you already install the Bower:
+
+```
+bower install kabam-requestNotificationPermission
+```
+
+Include the directive `script requestNotificationPermission.js` into your application:
+
+```
+<script type="text/javascript" src="bower_components/kabam-requestNotificationPermission/requestNotificationPermission.js"></script>
+```
+
+Add `kabam.requestNotificationPermission` as a module dependency to your application
+
+```
+angular.module('yourAwesomeApplication', [
+  'kabam.requestNotificationPermission'
+]);
+```
+## How to Use
+
+To use this directive, you need to add new attribute `request-notification-permission` to your html element.
+For examples:
+
+You might want to use the directive this way if you need to get the user permission in the first time they load the application.
+```
+<body request-notification-permission>Call</body>
+```
+
+You might want to use the directive this way if you need to get the user permission after they click some element or button.
+```
+<button request-notification-permission>Call</button>
+```
