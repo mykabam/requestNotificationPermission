@@ -6,6 +6,11 @@ requestNotificationPermission directive
 
 A handy directive to request Notification permission from user.
 
+## Browser supports
+
+* Chrome >= v22.0
+* Firefox >= v22.0
+
 ## How to Install
 
 To use this directive, fist you need to install it via [Bower](http://bower.io/).
