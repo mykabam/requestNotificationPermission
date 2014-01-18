@@ -7,20 +7,15 @@
 
 function requestPermission() {
 
-  var userAgent = navigator.userAgent,
-    notification = null;
+  var notification = null;
 
-  var FIREFOX = userAgent.match(/Firefox\//),
-    CHROME = userAgent.match(/Chrome\//) || userAgent.match(/PhantomJS\//);
-
-  if (FIREFOX) {
-    notification = Notification;
-  } else if (CHROME) {
-    notification = webkitNotifications || Notification;
+  if (window.Notification) {
+    notification = window.Notification;
+  } else if (window.webkitNotifications) {
+    notification = window.webkitNotifications;
   }
 
   if (notification && notification.permission !== 'denied') {
-
     notification.requestPermission(function(status) {
       if (notification.permission !== status) {
         notification.permission = status;

@@ -1,6 +1,6 @@
 {
   "name": "kabam-requestNotificationPermission",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Muhammad Ghazali <muhammadghazali2480@gmail.com>"
   ],
@@ -21,7 +21,7 @@
     "tests"
   ],
   "devDependencies": {
-    "angular": "~1.2.2",
-    "angular-mocks": "~1.2.2"
+    "angular": "~1.2.8",
+    "angular-mocks": "~1.2.8"
   }
 }
