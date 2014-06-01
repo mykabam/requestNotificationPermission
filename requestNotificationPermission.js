@@ -63,7 +63,7 @@ angular.module('kabam.requestNotificationPermission', [])
         isActive: '@requestNotificationPermission'
       },
       link: function(scope, element, attrs) {
-        console.log('requestNotificatiionPermission', scope.isActive, typeof scope.isActive);
+
         if (scope.isActive === 'false') {
           return;
         }

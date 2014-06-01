@@ -1,6 +1,6 @@
 {
   "name": "kabam-requestNotificationPermission",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular directive to request Notification permission",
   "main": "requestNotificationPermission.js",
   "directories": {
