@@ -48,6 +48,15 @@ You might want to use the directive this way if you need to get the user permiss
 <button request-notification-permission>Call</button>
 ```
 
+The attribute can be given a value that should evaluate to a boolean (or 'true' / 'false' string) to enable / disable it.
+For example:
+
+```
+<body request-notification-permission="{{isLogin}}">Call</body>
+```
+
+Would use the value of $scope.isLogin to only make the request after the user is logged-in
+
 ## Running Tests
 
 ### Install dev dependencies
