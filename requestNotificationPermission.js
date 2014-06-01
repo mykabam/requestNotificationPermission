@@ -41,33 +41,47 @@ function requestPermission() {
  * only click event will work best on Google Chrome, otherwise will not be
  * working as expected.
  *
+ * An optional boolean value to the attribute can be given to activate the trigger
+ * mechanism. This is useful for dynamically set the trigger on pages based on
+ * a condition.
+ *
  * @element ANY
  *
  * @example
    <doc:example>
       <doc:source>
         <button request-notification-permission>Call</button>
-        <body request-notification-permission>
+        <body request-notification-permission="{{isLogin}}">
       </doc:source>
     </doc:example>
  */
 angular.module('kabam.requestNotificationPermission', [])
   .directive('requestNotificationPermission', function() {
 
-    return function(scope, element, attrs) {
-      // listening to click event on the element
-      element.bind('click', function(e) {
-        requestPermission();
-      });
+    return {
+      scope: {
+        isActive: '@requestNotificationPermission'
+      },
+      link: function(scope, element, attrs) {
+        console.log('requestNotificatiionPermission', scope.isActive, typeof scope.isActive);
+        if (scope.isActive === 'false') {
+          return;
+        }
 
-      // listening to mouseover event on the element
-      element.bind('mouseover', function(e) {
-        requestPermission();
-      });
+        // listening to click event on the element
+        element.bind('click', function(e) {
+          requestPermission();
+        });
 
-      // listening to mousemove event on the element
-      element.bind('mousemove', function(e) {
-        requestPermission();
-      });
+        // listening to mouseover event on the element
+        element.bind('mouseover', function(e) {
+          requestPermission();
+        });
+
+        // listening to mousemove event on the element
+        element.bind('mousemove', function(e) {
+          requestPermission();
+        });
+      }
     };
   });
